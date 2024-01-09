@@ -7,21 +7,25 @@ import SocialPill from "../components/icons/SocialPill.astro";
 import GithubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import Experience from "../components/Experience.astro";
-import BriefcaseIcon from "../components/icons//Briefcase.astro";
+import BriefcaseIcon from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+
 import SectionContainer from "../components/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
   title="Porfolio de Daniel - Desarrollador y programador Web con 4 años de experiencia ."
   description="Contrata a Daniel para crear tu aplicación web. Desarrollador Web">
-  <main>
-    <SectionContainer class="pt-44 pb-24">
+  <main class="px-4">
+    <SectionContainer class="pt-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="https://lh3.googleusercontent.com/pw/ABLVV85ZwgU3iB6HWIN47-5gpNV3q6-vSv6cRxc28ghS3KDB2887SWoP9h2hBTkS1QB-wLUoPHGwzn9wkQ73SsFC7ukUbshfMBvXNoeDMCFL7eg-9S5aHa9DX6LV_wLb1stRqJR97ZArKnIipgyxv1jxwVDU7W8BLASwnnz3VoEPQ18PwdwuyUDRll7SWZm4wa4hHzI5pNp_AIkcc8tOjrAr2CPCJNfLerrl0AtBnao6Kb47UJX5c91q8RfrmT4R3phCmINbECfn0wxVtJu_UhYJjDSw5N5PFi34GEr_UugRSp1WfSO1CwKkfwxXzgdyeNA6s3ZSUatYDcUm-33DGJmPicU1kQ04uxccwWxgpwkEYSkVuDfPUN5RXX87c_PMvtOr8VrPHk-gsyu6Pt3rut1bwpvJfhwPvJa3P7HWIQkd-JrSkS2mtxdFqZboZaJavfs73e1gLREG0vX-eYbIdfWPUZsHomDbNl7K2m51UxBKg73h9fi_HnkQSOE-n0w1HmnnPORqgAcZA_Qk1j2Hwt9_Ap0JmwDkjf7_PmxfqGtK01EMsWqrL_bMYVFPirr1BvxWrINoci06ABBnvwJnvzLn9HbyiQE5Ou4sSuZYmlCrKUtOsOd1nDbSAOt5QX1T-DQVgz0laUZ7UdidPsgW1xhQM0eDVG2_Xaw3-cPpmNZgAVl5P45dSCrgtvu7YqkLoucabjAMfP9bMDjU08c8nLjEVlfEL1wUv0-bbp1BtoCuI0YegQRc-izzHRI77JnuGebXcFYYSfu-PJogdHgDksqQzxWmqK3KkNLPEHGaFLR9JSvEPmaE9U-N5go5TeYMSNaNhUuu2J_wwjaZ9yBWTV2ZczQ8CW_HU-3LxA32EhD3iIVbWrWVE4voqVSer7fG-u7aOuwWZPf_hr0z2SE3IDo1LbEi8nXlLHTIAaF9RW3pe8cSye8079Vxm7Gci1M5VFgqrKeTMHdm42u3jUCN77y9YgMwQzLfpAogrJqeXuw5GexyNsip_ciejLCj__O_NL3kAIqVlADvrUKcfIOOhEF_zkGU1iEW2v18jGY-M5N1PzMA5z6updNqiV0MCWMjHexNsMUH23sTT6TfFrPSX7wNU5DDsdviNS-DMZsnqchHfAuz8HJDiE8vmWGLIOHw2Sluo3bCGVZc0feqkS8T1DnTvZJej9j-SYXlnqro6U89KTSpdNaOV3CLmLC_JRL2Sok=w1620-h911-s-no-gm?authuser=2"
         alt="dani photo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
         Hey, soy Daniel
         <a
           href="https://www.linkedin.com/in/daniel-theran/"
@@ -31,7 +35,7 @@ import SectionContainer from "../components/SectionContainer.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span> +4 años de experiencia.</span>
         <span class="text-yellow-200/90">
           Desarrollador Web con experiencia con Es6, Typescript, RxJS, Angular.js, Vue.js,
@@ -44,28 +48,36 @@ import SectionContainer from "../components/SectionContainer.astro";
         <span class="opacity-75"> ¿Tienes alguna pregunta? ¡Envíame un mensaje!</span>
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex flex-wrap gap-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/daniel-theran/">
-          <LinkedInIcon class="size-6" />
+          <LinkedInIcon class="size-4 md:size-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/dtheran1/">
-          <GithubIcon class="size-6" />
+          <GithubIcon class="size-4 md:size-6" />
           GitHub
         </SocialPill>
         <SocialPill href="mailto:dtheran1.0@gmail.com">
-          <MailIcon class="size-6" />
+          <MailIcon class="size-4 md:size-6" />
           dtheran1.0@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
 
     <SectionContainer id="experiencia">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <BriefcaseIcon class="size-7" />
         Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
